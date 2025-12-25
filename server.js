@@ -10,7 +10,7 @@ import crypto from 'crypto'
 const {v2: cloudinary} = pkg
 
 env.config();
-
+ 
 mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("Connected to MongoDB"))
 .catch((err) => console.log(err));
